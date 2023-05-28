@@ -1,0 +1,4 @@
+.vscode/
+*.o
+*.wav
+sam-bip
