@@ -5,9 +5,6 @@
 #include "render.h"
 #include "RenderTabs.h"
 
-#include "debug.h"
-extern int debug;
-
 //extern unsigned char A, X, Y;
 //extern unsigned char mem44;
 
@@ -292,10 +289,6 @@ void Render()
 
     if (!singmode) AssignPitchContour();
     RescaleAmplitude();
-
-    if (debug) {
-        PrintOutput(sampledConsonantFlag, frequency1, frequency2, frequency3, amplitude1, amplitude2, amplitude3, pitches);
-    }
 
     ProcessFrames(t);
 }
